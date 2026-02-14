@@ -1,0 +1,3 @@
+# Jarvis Widget Requirements
+# Uses tkinter (included in Python standard library)
+# No additional dependencies needed
