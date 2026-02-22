@@ -1,45 +1,84 @@
-# Jarvis Widget - Floating Desktop Assistant
+# jarvis-widget
 
-A lightweight, floating desktop widget that provides quick access to Jarvis AI assistant. Always visible, always ready.
+## Detailed Description
 
-## Features
+jarvis-widget is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- 🪟 **Floating Widget** - Always-on-top desktop widget
-- ⚡ **Quick Access** - Instant task creation and viewing
-- 🔔 **Notifications** - Desktop notifications for reminders
-- 🎯 **Minimal Footprint** - Lightweight and fast
-- 🔒 **Privacy First** - All data stored locally
+## Problem Statement
 
-## Installation
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the widget
-python widget.py
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
 
 ## Usage
 
-The widget appears as a small floating window with:
-- Quick task input
-- Today's tasks preview
-- Mini chat interface
-- Settings access
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## Requirements
+## Quality Standards
 
-- Python 3.9+
-- PyQt5 or tkinter (included in Python)
-- Optional: Ollama for AI features
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-## Controls
+## Security
 
-- Drag to move the widget
-- Click to expand/collapse
-- Right-click for settings
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
